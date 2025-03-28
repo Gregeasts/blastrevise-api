@@ -105,6 +105,7 @@ def check_answer():
         Question format: {questiontype}
         Question level:{questionlevel}
         Reply with "Correct" if the answer is correct, or "Wrong" if the answer is wrong. For the format types of multiple choice and short answer, then add a comment on why the answer is wrong if it is, with the correct answer given (not in loads of detail. Do not ever use the word "correct" in this explanation! For the long answer questions, there will be a max mark given in the question, after deciding whether the answer is roughly right or wrong, give it a mark out of this max mark, critically analysing all of the factual reasoning, grammar and layout of the argument, structure etc and however else the question would be analysed at the given level. Be harsh!)
+        For all question formats, ignore spelling errors when deciding if correct or incorrect. Do mention these however in the explanation after if required.
         """
         
         model = genai.GenerativeModel("gemini-2.0-flash")
